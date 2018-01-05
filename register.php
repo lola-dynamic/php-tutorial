@@ -15,7 +15,7 @@ $last_name = $mysqli->escape_string($_POST['lastname']);
  $passsword = $mysqli->escape_string(password_harsh($_POST['password'], PASSWORD_BCRYPT));
  $hash = $mysqli->escape_string( md5( rand(0,1000) ) );
  //check if user with that email already exists
- $result = mysqli->query("SELECT * FROM users WHERE email='$email'") or die($mysqli->error());
+ $result = mysqli->query("SELECT * FROM users WHERE email='$email' ") or die($mysqli->error());
 
  //we know user email exists if the rows returned are more than 0
  if ( $result->num_rows > 0) {
@@ -37,7 +37,7 @@ $last_name = $mysqli->escape_string($_POST['lastname']);
 
  				//send registration confirmation link (verify.php)
  				$to     = $email;
- 				$subject = 'account verification (abigailomolola1@gmail.com)';
+ 				$subject = 'account verification (clevertechie.com)';
  				$message_body = ' Hello '.$first_name.',
  				Thank you for signing up!
 

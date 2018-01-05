@@ -27,7 +27,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		//send registration confirmation link (reset.php)
 		$to		= $email;
-		$subject = 'password reset link (abigailomolola1@gmail.com)';
+		$subject = 'password reset link (clevertechie.com)';
 		$message_body = '
 		Hello '.$first_name.' ,
 

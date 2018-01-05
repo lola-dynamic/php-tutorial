@@ -3,7 +3,7 @@
 //connection variables
 $host = 'localhost';
 $user = 'root';
-$password = 'mypass123';
+$password = '';
 
 //create mysql connection
 $mysqli = new mysqli($host,$user,$password);
